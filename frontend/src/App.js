@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import courseService from './services/courses'
 import CourseForm from './components/CourseForm'
+import courseList from './courses'
 
 function App() {
   const [coursesTaken, setCoursesTaken] = useState([])
@@ -20,22 +21,22 @@ function App() {
     event.preventDefault()
 
     const courseObj = {
-      id: Math.round(Math.random()*1000),
+      id: Math.round(Math.random() * 1000),
       name: course
     }
 
     courseService
-    .create(courseObj)
-    .then(returnedCourse => {
-      setCoursesTaken(coursesTaken.concat(returnedCourse))
-      setCourse('')
-    })
+      .create(courseObj)
+      .then(returnedCourse => {
+        setCoursesTaken(coursesTaken.concat(returnedCourse))
+        setCourse('')
+      })
 
   }
 
   return (
     <>
-      <CourseForm 
+      <CourseForm
         course={course}
         handleCourseChange={handleCourseChange}
         addCourse={addCourse}
