@@ -2,39 +2,82 @@ import { useState, useEffect } from 'react'
 import courseService from './services/courses'
 import CourseForm from './components/CourseForm'
 import allCourses from './allCourses'
+import Group from './components/Group'
+import Masonry from 'react-masonry-css'
+import "./App.css"
 
 function App() {
-  const [coursesTaken, setCoursesTaken] = useState([])
-  const [message, setMessage] = useState(null)
+   const [coursesTaken, setCoursesTaken] = useState([])
+   const [message, setMessage] = useState(null)
+   const [groups, setGroups] = useState([])
 
-  //loads in taken courses
-  useEffect(() => {
-    courseService.getAll().then(courses =>
-      setCoursesTaken(courses)
-    )
-  }, [])
+   const numCoursesMap = new Map([
+      ['Computer Science', 15],
+      ['General', 21],
+      ['Math', 7],
+      ['Science', 5]
+   ])
 
+   const areaMap = new Map([
+      ['Computer Science', ['none', 'theory', 'systems', 'social', 'design']],
+      ['General', ['humanities', 'ss', 'iqp', 'mqp']],
+      ['Math', []],
+      ['Science', []]
+   ])
 
+   //loads in taken courses
+   useEffect(() => {
+      courseService.getAll().then(courses =>
+         setCoursesTaken(courses)
+      )
+      setGroups(['Computer Science', 'General', 'Math', 'Science'])
 
-  return (
-    <>
-      <CourseForm
-        allCourses={allCourses}
-        courseService={courseService}
-        coursesTaken={coursesTaken}
-        setCoursesTaken={setCoursesTaken}
-        message={message}
-        setMessage={setMessage}
-      />
-      {coursesTaken.map(course =>
-        <div key={course.id}>
-          {course.name} {course.group}
-        </div>
-      )}
+   }, [])
 
+   const breakpoints = {
+      default: 4,
+      1250: 3,
+      800: 2,
+      550: 1
+   }
 
-    </>
-  )
+   return (
+      <div>
+         <CourseForm
+            allCourses={allCourses}
+            courseService={courseService}
+            coursesTaken={coursesTaken}
+            setCoursesTaken={setCoursesTaken}
+            message={message}
+            setMessage={setMessage}
+         />
+
+         <h2>all courses taken</h2>
+         {coursesTaken.map(course =>
+            <div key={course.id}>
+               {course.name} {course.area}
+            </div>
+         )}
+
+         <h2>groups</h2>
+         <Masonry
+            breakpointCols={breakpoints}
+            className="my-masonry-grid"
+            columnClassName="my-masonry-grid_column"
+         > 
+            {groups.map(group =>
+               <div key={group}>
+                  <Group
+                     groupName={group}
+                     numCourses={numCoursesMap.get(group)}
+                     areas={areaMap.get(group)}
+                     coursesTaken={coursesTaken}
+                  />
+               </div>
+            )}
+         </Masonry>
+      </div>
+   )
 }
 
 export default App
