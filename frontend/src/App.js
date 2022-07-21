@@ -1,51 +1,38 @@
 import { useState, useEffect } from 'react'
 import courseService from './services/courses'
 import CourseForm from './components/CourseForm'
-import courseList from './courses'
+import allCourses from './allCourses'
 
 function App() {
   const [coursesTaken, setCoursesTaken] = useState([])
-  const [course, setCourse] = useState('')
+  const [message, setMessage] = useState(null)
 
+  //loads in taken courses
   useEffect(() => {
     courseService.getAll().then(courses =>
       setCoursesTaken(courses)
     )
   }, [])
 
-  const handleCourseChange = (event) => {
-    setCourse(event.target.value)
-  }
 
-  const addCourse = () => {
-    event.preventDefault()
-
-    const courseObj = {
-      id: Math.round(Math.random() * 1000),
-      name: course
-    }
-
-    courseService
-      .create(courseObj)
-      .then(returnedCourse => {
-        setCoursesTaken(coursesTaken.concat(returnedCourse))
-        setCourse('')
-      })
-
-  }
 
   return (
     <>
       <CourseForm
-        course={course}
-        handleCourseChange={handleCourseChange}
-        addCourse={addCourse}
+        allCourses={allCourses}
+        courseService={courseService}
+        coursesTaken={coursesTaken}
+        setCoursesTaken={setCoursesTaken}
+        message={message}
+        setMessage={setMessage}
       />
       {coursesTaken.map(course =>
         <div key={course.id}>
-          {course.name}
+          {course.name} {course.group}
         </div>
       )}
+
+
     </>
   )
 }

@@ -1,0 +1,424 @@
+[
+   {
+      "name": "CS 1004",
+      "title": "INTRODUCTION TO PROGRAMMING FOR NON-MAJORS",
+      "group": "cs"
+   },
+   {
+      "name": "CS 1101",
+      "title": "INTRODUCTION TO PROGRAM DESIGN",
+      "group": "cs"
+   },
+   {
+      "name": "CS 1102",
+      "title": "ACCELERATED INTRODUCTION TO PROGRAM DESIGN",
+      "group": "cs"
+   },
+   {
+      "name": "CS 2011",
+      "title": "INTRODUCTION TO MACHINE ORGANIZATION AND ASSEMBLY LANGUAGE",
+      "group": "cs", 
+      "requirements": [
+         "CS 2303"
+      ]
+   },
+   {
+      "name": "CS 2022",
+      "title": "DISCRETE MATHEMATICS",
+      "group": "cs"
+   },
+   {
+      "name": "CS 2102",
+      "title": "OBJECT-ORIENTED DESIGN CONCEPTS",
+      "group": "cs",
+      "requirements": [
+         "CS 1101"
+      ]
+   },
+   {
+      "name": "CS 2103",
+      "title": "ACCELERATED OBJECT-ORIENTED DESIGN CONCEPTS",
+      "group": "cs",
+      "requirements": [
+         "CS 1101"
+      ]
+   },
+   {
+      "name": "CS 2119",
+      "title": "APPLICATION BUILDING WITH OBJECT-ORIENTED CONCEPTS",
+      "group": "cs",
+      "requirements": [
+         "CS 1101"
+      ]
+   },
+   {
+      "name": "CS 2223",
+      "title": "ALGORITHMS",
+      "group": "cs",
+      "requirements": [
+         "CS 2102",
+         "CS 2022"
+      ]
+   },
+   {
+      "name": "CS 2301",
+      "title": "SYSTEMS PROGRAMMING FOR NON-MAJORS",
+      "group": "cs",
+      "requirements": [
+         "CS 1101"
+      ]
+   },
+   {
+      "name": "CS 2303",
+      "title": "SYSTEMS PROGRAMMING CONCEPTS",
+      "group": "cs",
+      "requirements": [
+         "CS 2102"
+      ]
+   },
+   {
+      "name": "CS 3013",
+      "title": "OPERATING SYSTEMS",
+      "group": "cs",
+      "area": "systems",
+      "requirements": [
+         "CS 2303",
+         "CS 2011"
+      ]
+   },
+   {
+      "name": "CS 3041",
+      "title": "HUMAN-COMPUTER INTERACTION",
+      "group": "cs",
+      "area": "design",
+      "requirements": [
+         "CS 2102"
+      ]
+   },
+   {
+      "name": "CS 3043",
+      "title": "SOCIAL IMPLICATIONS OF INFORMATION PROCESSING",
+      "group": "cs",
+      "area": "social"
+   },
+   {
+      "name": "CS 3133",
+      "title": "FOUNDATIONS OF COMPUTER SCIENCE",
+      "group": "cs",
+      "area": "theory",
+      "requirements": [
+         "CS 2022",
+         "CS 2223"
+      ]
+   },
+   {
+      "name": "CS 3431",
+      "title": "DATABASE SYSTEMS I",
+      "group": "cs",
+      "area": "design",
+      "requirements": [
+         "CS 2022",
+         "CS 2102"
+      ]
+   },
+   {
+      "name": "CS 3516",
+      "title": "COMPUTER NETWORKS",
+      "group": "cs",
+      "requirements": [
+         "CS 2303"
+      ]
+   },
+   {
+      "name": "CS 3733",
+      "title": "SOFTWARE ENGINEERING",
+      "group": "cs",
+      "area": "design",
+      "requirements": [
+         "CS 2102"
+      ]
+   },
+   {
+      "name": "CS 4032",
+      "title": "NUMERICAL METHODS FOR LINEAR AND NONLINEAR SYSTEMS",
+      "group": "cs"
+   },
+   {
+      "name": "CS 4033",
+      "title": "NUMERICAL METHODS FOR CALCULUS AND DIFFERENTIAL EQUATIONS",
+      "group": "cs"
+   },
+   {
+      "name": "CS 4100",
+      "title": "ARTIFICIAL INTELLIGENCE FOR INTERACTIVE MEDIA AND GAMES",
+      "group": "cs",
+      "requirements": [
+         "CS 2102",
+         "CS 2223"
+      ]
+   },
+   {
+      "name": "CS 4120",
+      "title": "ANALYSIS OF ALGORITHMS",
+      "group": "cs",
+      "area": "theory",
+      "requirements": [
+         "CS 2223"
+      ]
+   },
+   {
+      "name": "CS 4123",
+      "title": "THEORY OF COMPUTATION",
+      "group": "cs",
+      "area": "theory",
+      "requirements": [
+         "CS 3133"
+      ]
+   },
+   {
+      "name": "CS 420X",
+      "title": "GRAPHICL SIMUL OF PHYSICAL SYS",
+      "group": "cs"
+   },
+   {
+      "name": "CS 4233",
+      "title": "OBJECT-ORIENTED ANALYSIS AND DESIGN",
+      "group": "cs",
+      "area": "design",
+      "requirements": [
+         "CS 2303",
+         "CS 3733"
+      ]
+   },
+   {
+      "name": "CS 4241",
+      "title": "WEBWARE: COMPUTATIONAL TECHNOLOGY FOR NETWORK INFORMATION SYSTEMS",
+      "group": "cs",
+      "requirements": [
+         "CS 2102",
+         "CS 3013"
+      ]
+   },
+   {
+      "name": "CS 4341",
+      "title": "INTRODUCTION TO ARTIFICIAL INTELLIGENCE",
+      "group": "cs",
+      "requirements": [
+         "CS 2102",
+         "CS 2223",
+         "CS 3133"
+      ]
+   },
+   {
+      "name": "CS 4342",
+      "title": "MACHINE LEARNING",
+      "group": "cs"
+   },
+   {
+      "name": "CS 4401",
+      "title": "SOFTWARE SECURITY ENGINEERING",
+      "group": "cs",
+      "requirements": [
+         "CS 3013",
+         "CS 3733"
+      ]
+   },
+   {
+      "name": "CS 4404",
+      "title": "TOOLS AND TECHNIQUES IN COMPUTER NETWORK SECURITY",
+      "group": "cs",
+      "requirements": [
+         "CS 3013",
+         "CS 3516"
+      ]
+   },
+   {
+      "name": "CS 4432",
+      "title": "DATABASE SYSTEMS II",
+      "group": "cs",
+      "requirements": [
+         "CS 3431",
+         "CS 3733"
+      ]
+   },
+   {
+      "name": "CS 4445",
+      "title": "DATA MINING AND KNOWLEDGE DISCOVERY IN DATABASES",
+      "group": "cs",
+      "requirements": [
+         "CS 2223",
+         "CS 3431/CS 3733"
+      ]
+   },
+   {
+      "name": "CS 4513",
+      "title": "DISTRIBUTED COMPUTING SYSTEMS",
+      "group": "cs",
+      "area": "systems",
+      "requirements": [
+         "CS 3013",
+         "CS 3516"
+      ]
+   },
+   {
+      "name": "CS 4515",
+      "title": "COMPUTER ARCHITECTURE",
+      "group": "cs",
+      "area": "systems",
+      "requirements": [
+         "CS 2011",
+         "CS 3013"
+      ]
+   },
+   {
+      "name": "CS 4516",
+      "title": "ADVANCED COMPUTER NETWORKS",
+      "group": "cs",
+      "area": "systems",
+      "requirements": [
+         "CS 3013",
+         "CS 3516"
+      ]
+   },
+   {
+      "name": "CS 4518",
+      "title": "MOBILE & UBIQUITOUS COMPUTING",
+      "group": "cs"
+   },
+   {
+      "name": "CS 4533",
+      "title": "TECHNIQUES OF PROGRAMMING LANGUAGE TRANSLATION",
+      "group": "cs",
+      "area": "theory",
+      "requirements": [
+         "CS 2102",
+         "CS 3133"
+      ]
+   },
+   {
+      "name": "CS 4536",
+      "title": "PROGRAMMING LANGUAGES",
+      "group": "cs",
+      "area": "theory",
+      "requirements": [
+         "CS 2303",
+         "CS 3133",
+         "CS 1101"
+      ]
+   },
+   {
+      "name": "CS 453X",
+      "title": "MACHINE LEARNING",
+      "group": "cs",
+      "requirements": [
+         "CS 2223"
+      ]
+   },
+   {
+      "name": "CS 4731",
+      "title": "COMPUTER GRAPHICS",
+      "group": "cs",
+      "requirements": [
+         "CS 2223",
+         "CS 2303"
+      ]
+   },
+   {
+      "name": "CS 4801",
+      "title": "INTRODUCTION TO CRYPTOGRAPHY AND COMMUNICATION SECURITY",
+      "group": "cs",
+      "requirements": [
+         "CS 2301",
+         "CS 2022"
+      ]
+   },
+   {
+      "name": "CS 4802",
+      "title": "BIOVISUALIZATION",
+      "group": "cs",
+      "requirements": [
+         "CS 2102",
+         "CS 2223"
+      ]
+   },
+   {
+      "name": "CS 4803",
+      "title": "BIOLOGICAL AND BIOMEDICAL DATABASE MINING",
+      "group": "cs",
+      "requirements": [
+         "CS 2102",
+         "CS 2223",
+         "MA 2611"
+      ]
+   },
+   {
+      "name": "CS 480X",
+      "title": "DATA VISUALIZATION",
+      "group": "cs",
+      "requirements": [
+         "CS 3733"
+      ]
+   },
+   {
+      "name": "GOV 2314",
+      "title": "CYBERLAW AND POLICY",
+      "group": "cs",
+      "area": "social"
+   },
+   {
+      "name": "GOV 1310",
+      "title": "LAW, COURTS, AND POLITICS"
+   },
+   {
+      "name": "GOV 2310",
+      "title": "CONSTITUTIONAL LAW: FOUNDATIONS OF GOVERNMENT"
+   },
+   {
+      "name": "GOV 2315",
+      "title": "PRIVACY: HOW LAWS, POLICY, AND TECHNOLOGY FIT TOGETHER",
+      "requirements": [
+         "GOV 2310/GOV 1310"
+      ]
+   },
+   {
+      "name": "IMGD 1000",
+      "title": "CRITICAL STUDIES OF INTERACTIVE MEDIA AND GAMES"
+   },
+   {
+      "name": "IMGD 2000",
+      "title": "SOCIAL ISSUES IN INTERACTIVE MEDIA AND GAMES",
+      "area": "social",
+      "requirements": [
+         "IMGD 1000"
+      ]
+   },
+   {
+      "name": "IMGD 2001",
+      "title": "PHILOSOPHY AND ETHICS OF COMPUTER GAMES",
+      "area": "social",
+      "requirements": [
+         "IMGD 1000"
+      ]
+   },
+   {
+      "name": "RBE 3100",
+      "title": "SOCIAL IMPLICATIONS OF ROBOTICS",
+      "area": "social"
+   },
+   {
+      "name": "MA 2610",
+      "title": "APPLIED STATISTICS FOR THE LIFE SCIENCES",
+      "group": "math",
+      "requirements": [
+         "MA 1022"
+      ]
+   },
+   {
+      "name": "MA 2611",
+      "title": "APPLIED STATISTICS I",
+      "group": "math",
+      "requirements": [
+         "MA 1022"
+      ]
+   }
+]
