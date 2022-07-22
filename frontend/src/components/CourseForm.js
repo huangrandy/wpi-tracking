@@ -67,7 +67,7 @@ const CourseForm = ({
    }
 
    return (
-      <>
+      <div className="courseForm">
          {message}
          <form onSubmit={addCourse}>
             <div>
@@ -78,7 +78,7 @@ const CourseForm = ({
                <button type='submit'>Add Course</button>
             </div>
          </form>
-      </>
+      </div>
    )
 }
 

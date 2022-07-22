@@ -10,14 +10,13 @@ const Group = ({
    const courses = coursesTaken.filter(c => areas.includes(c.area))
    const tableStyle = {
       width: 'auto',
-      whiteSpace:"nowrap"
+      whiteSpace: "nowrap"
    }
-   
    const groupTdStyle = {
       padding: "5px"
    }
    const numberTdStyle = {
-      width: '40px',
+      width: '30px',
       padding: "5px"
    }
    const courseTdStyle = {
@@ -33,7 +32,10 @@ const Group = ({
             <td style={numberTdStyle}>
                {i + 1}
             </td>
-            <td style={courseTdStyle}>
+            <td
+               style={courseTdStyle}
+               onClick={(event) => { }}
+            >
                {displayCourse ? courses[i].name : ""}
             </td>
          </tr>
@@ -41,8 +43,8 @@ const Group = ({
    }
 
    return (
-      <div>
-         <Table striped bordered style={tableStyle}>
+      <div className="tableDiv">
+         <Table bordered style={tableStyle}>
             <tbody>
                <tr>
                   <td colSpan={2} style={groupTdStyle}>

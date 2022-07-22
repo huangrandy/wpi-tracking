@@ -4,6 +4,7 @@ import CourseForm from './components/CourseForm'
 import allCourses from './allCourses'
 import Group from './components/Group'
 import Masonry from 'react-masonry-css'
+import { Navbar, Container } from 'react-bootstrap'
 import "./App.css"
 
 function App() {
@@ -36,46 +37,53 @@ function App() {
 
    const breakpoints = {
       default: 4,
-      1250: 3,
-      800: 2,
-      550: 1
+      1220: 3,
+      780: 2,
+      540: 1
    }
 
    return (
       <div>
-         <CourseForm
-            allCourses={allCourses}
-            courseService={courseService}
-            coursesTaken={coursesTaken}
-            setCoursesTaken={setCoursesTaken}
-            message={message}
-            setMessage={setMessage}
-         />
+         <Navbar variant="light">
+            <h4>
+               Tracking App
+            </h4>
+         </Navbar>
+         <div className="body">
+            <CourseForm
+               allCourses={allCourses}
+               courseService={courseService}
+               coursesTaken={coursesTaken}
+               setCoursesTaken={setCoursesTaken}
+               message={message}
+               setMessage={setMessage}
+            />
 
-         <h2>all courses taken</h2>
-         {coursesTaken.map(course =>
-            <div key={course.id}>
-               {course.name} {course.area}
-            </div>
-         )}
-
-         <h2>groups</h2>
-         <Masonry
-            breakpointCols={breakpoints}
-            className="my-masonry-grid"
-            columnClassName="my-masonry-grid_column"
-         > 
-            {groups.map(group =>
-               <div key={group}>
-                  <Group
-                     groupName={group}
-                     numCourses={numCoursesMap.get(group)}
-                     areas={areaMap.get(group)}
-                     coursesTaken={coursesTaken}
-                  />
+            <h2>all courses taken</h2>
+            {coursesTaken.map(course =>
+               <div key={course.id}>
+                  {course.name} {course.area}
                </div>
             )}
-         </Masonry>
+
+            <h2>groups</h2>
+            <Masonry
+               breakpointCols={breakpoints}
+               className="my-masonry-grid"
+               columnClassName="my-masonry-grid_column"
+            >
+               {groups.map(group =>
+                  <div key={group} className="tableDiv">
+                     <Group
+                        groupName={group}
+                        numCourses={numCoursesMap.get(group)}
+                        areas={areaMap.get(group)}
+                        coursesTaken={coursesTaken}
+                     />
+                  </div>
+               )}
+            </Masonry>
+         </div>
       </div>
    )
 }

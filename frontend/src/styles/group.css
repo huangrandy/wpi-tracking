@@ -1,0 +1,16 @@
+table {
+   width: 'auto';
+   white-space: nowrap
+}
+
+td {
+   padding: "5px"
+}
+
+.numberTd {
+   width: '30px';
+}
+
+.courseTd {
+   width: '200px';
+}
