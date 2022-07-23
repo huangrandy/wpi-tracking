@@ -8,20 +8,15 @@ const Group = ({
 }) => {
    const rows = []
    const courses = coursesTaken.filter(c => areas.includes(c.area))
-   const tableStyle = {
-      width: 'auto',
-      whiteSpace: "nowrap"
-   }
-   const groupTdStyle = {
-      padding: "5px"
-   }
-   const numberTdStyle = {
+
+   const numberCellStyle = {
       width: '30px',
-      padding: "5px"
+      padding: "2.5px 0",
+      textAlign: "center"
    }
-   const courseTdStyle = {
-      width: '200px',
-      padding: "5px"
+   const courseCellStyle = {
+      width: '220px',
+      padding: "2px 2px 2px 4px"
    }
 
    for (let i = 0; i < numCourses; i++) {
@@ -29,11 +24,11 @@ const Group = ({
       if (i < courses.length) displayCourse = true
       rows.push(
          <tr key={i}>
-            <td style={numberTdStyle}>
+            <td style={numberCellStyle}>
                {i + 1}
             </td>
             <td
-               style={courseTdStyle}
+               style={courseCellStyle}
                onClick={(event) => { }}
             >
                {displayCourse ? courses[i].name : ""}
@@ -42,18 +37,22 @@ const Group = ({
       )
    }
 
+   const handleClickCell = () => {
+
+   }
+
    return (
-      <div className="tableDiv">
-         <Table bordered style={tableStyle}>
-            <tbody>
-               <tr>
-                  <td colSpan={2} style={groupTdStyle}>
-                     {groupName}
-                  </td>
-               </tr>
-               {rows}
-            </tbody>
-         </Table>
+      <div className="groupInternal">
+         <div className="groupTitle">
+            {groupName}
+         </div>
+         <form>
+            <table>
+               <tbody>
+                  {rows}
+               </tbody>
+            </table>
+         </form>
       </div>
    )
 }

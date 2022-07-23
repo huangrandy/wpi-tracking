@@ -71,11 +71,14 @@ const CourseForm = ({
          {message}
          <form onSubmit={addCourse}>
             <div>
-               <input
+               <input 
+                  className="addInput"
                   value={course}
                   onChange={handleCourseChange}
                />
-               <button type='submit'>Add Course</button>
+               <button 
+               type='submit'
+               className="formButton">Add Course</button>
             </div>
          </form>
       </div>

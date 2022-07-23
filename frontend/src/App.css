@@ -4,13 +4,13 @@
   display: -ms-flexbox;
   /* Not needed if autoprefixing */
   display: flex;
-  margin-left: -30px;
+  margin-left: -20px;
   /* gutter size offset */
   width: auto;
 }
 
 .my-masonry-grid_column {
-  padding-left: 30px;
+  padding-left: 20px;
   /* gutter size */
   background-clip: padding-box;
   max-width: 250px
@@ -19,39 +19,111 @@
 /* Style your items */
 .my-masonry-grid_column>div {
   /* change div to reference your elements you put in <Masonry> */
-  border-color: red;
-  border-style: solid;
+  border: solid rgb(255, 255, 255) 1.7px;
   border-radius: 5px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 /* .courseForm {
   margin: 10px
 } */
 
+nav {
+  background-color: #1c232c;
+  position: sticky;
+  top: 0;
+  padding: 15px 20px;
+}
+
+html {
+  min-width: 540px;
+}
+
 body {
-  background-color: #0d1117;
+  white-space: nowrap;
+  min-width: 540px;
+  margin: 0;
+  background-color: #131921;
+  font-family: "Arial", Helvetica,  sans-serif;
 }
 
-.tableDiv {
-  display: inline-block;
-  vertical-align: top;
+.bodyContainer {
+  display: flex;
 }
 
-.body {
+.bodyContent {
   margin: 20px 0 0 20px;
 }
+
+.sidebar {
+  background: #10171f;
+  width: 250px;
+  height: 93vh;
+  top: 57px;
+  bottom: -57px;
+  position: sticky; 
+}
+
+.justifyStart {
+  margin-right: auto;
+}
+
+input {
+  outline: none;
+  margin-right: 5px;
+  height: 25px;
+  background-color: #0d121b;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+}
+
+.formButton {
+  padding: 4px 6px;
+  background-color: #21262d;
+  border: rgb(79, 82, 99) solid 1px;
+  border-radius: 5px;
+}
+
+
+.groupTitle {
+  margin: 4px 0 3px 0;
+}
+
+.groupInternal {
+  margin: 3px 5px 5px 5px;
+}
+
+
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+
+table {
+  border-spacing: 0px;
+
+}
+
+td {
+  border: 1px solid white;
+}
+
+tr:hover {
+  background-color: #212631;
+}
+
+
 
 * {
   color: #ffffff;
 }
 
-.navbar {
-  background-color: #161b22;
-  position: sticky;
-  top: 0
+.navLabel {
+  margin: 0px;
 }
 
 h4 {
-  margin: 10px 0 10px 20px
+  margin: 10px 20px
 }
