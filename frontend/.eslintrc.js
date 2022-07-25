@@ -25,6 +25,7 @@ module.exports = {
          "never"
       ],
       "eqeqeq": "error",
+      "no-empty": "off",
       "no-trailing-spaces": "off",
       "object-curly-spacing": [
          "error", "always"

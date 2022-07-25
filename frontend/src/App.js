@@ -4,8 +4,7 @@ import CourseForm from './components/CourseForm'
 import allCourses from './allCourses'
 import Group from './components/Group'
 import Masonry from 'react-masonry-css'
-import { Navbar, Container } from 'react-bootstrap'
-import "./App.css"
+import "./styles/App.css"
 
 function App() {
    const [coursesTaken, setCoursesTaken] = useState([])
@@ -20,9 +19,9 @@ function App() {
    ])
 
    const areaMap = new Map([
-      ['Computer Science', ['none', 'theory', 'systems', 'social', 'design']],
+      ['Computer Science', ['cs', 'theory', 'systems', 'social', 'design']],
       ['General', ['humanities', 'ss', 'iqp', 'mqp']],
-      ['Math', []],
+      ['Math', ['math']],
       ['Science', []]
    ])
 
@@ -81,6 +80,7 @@ function App() {
                            numCourses={numCoursesMap.get(group)}
                            areas={areaMap.get(group)}
                            coursesTaken={coursesTaken}
+                           setCoursesTaken={setCoursesTaken}
                         />
                      </div>
                   )}

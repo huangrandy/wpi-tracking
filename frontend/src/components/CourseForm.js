@@ -14,7 +14,7 @@ const CourseForm = ({
       setCourse(event.target.value)
    }
 
-
+   //checks whether inputted course is valid
    const getCourseValidity = () => {
       const courseNames = coursesTaken.map(c => c.name)
 
@@ -34,7 +34,7 @@ const CourseForm = ({
       return true
    }
 
-
+   //adds course to db
    const addCourse = () => {
       event.preventDefault()
 
@@ -71,14 +71,17 @@ const CourseForm = ({
          {message}
          <form onSubmit={addCourse}>
             <div>
-               <input 
+               <input
                   className="addInput"
                   value={course}
                   onChange={handleCourseChange}
                />
-               <button 
-               type='submit'
-               className="formButton">Add Course</button>
+               <button
+                  type='submit'
+                  className="formButton"
+               >
+                  Add Course
+               </button>
             </div>
          </form>
       </div>

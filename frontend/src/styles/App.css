@@ -44,7 +44,7 @@ body {
   min-width: 540px;
   margin: 0;
   background-color: #131921;
-  font-family: "Arial", Helvetica,  sans-serif;
+  font-family: "Arial", Helvetica, sans-serif;
 }
 
 .bodyContainer {
@@ -58,10 +58,9 @@ body {
 .sidebar {
   background: #10171f;
   width: 250px;
-  height: 93vh;
+  height: 94vh;
   top: 57px;
-  bottom: -57px;
-  position: sticky; 
+  position: sticky;
 }
 
 .justifyStart {
@@ -70,12 +69,25 @@ body {
 
 input {
   outline: none;
-  margin-right: 5px;
-  height: 25px;
+}
+
+.addInput {
+  border-radius: 5px;
   background-color: #0d121b;
+  margin-right: 5px;
+  height: 20px;
   border-style: solid;
   border-width: 1px;
-  border-radius: 5px;
+}
+
+.courseCellInput {
+  background-color: #131921;
+  font: inherit;
+  font-style: italic;
+  border: none;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .formButton {
@@ -96,9 +108,9 @@ input {
 
 
 .sticky {
-	position: -webkit-sticky;
-	position: sticky;
-	top: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 table {

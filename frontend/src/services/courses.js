@@ -3,7 +3,7 @@ const baseUrl = 'http://localhost:3001/api/courses'
 
 const getAll = async () => {
    const response = await axios.get(baseUrl)
-   console.log('')
+   console.log('getAll success')
    return response.data
 }
 
