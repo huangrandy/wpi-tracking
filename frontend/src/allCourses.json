@@ -1,22 +1,22 @@
 [
    {
       "name": "CS 1004",
-      "title": "INTRODUCTION TO PROGRAMMING FOR NON-MAJORS",
+      "title": "Introduction to Programming for Non-majors",
       "group": "cs"
    },
    {
       "name": "CS 1101",
-      "title": "INTRODUCTION TO PROGRAM DESIGN",
+      "title": "Introduction to Program Design",
       "group": "cs"
    },
    {
       "name": "CS 1102",
-      "title": "ACCELERATED INTRODUCTION TO PROGRAM DESIGN",
+      "title": "Accelerated Introduction to Program Design",
       "group": "cs"
    },
    {
       "name": "CS 2011",
-      "title": "INTRODUCTION TO MACHINE ORGANIZATION AND ASSEMBLY LANGUAGE",
+      "title": "Introduction to Machine Organization and Assembly Language",
       "group": "cs", 
       "requirements": [
          "CS 2303"
@@ -24,12 +24,12 @@
    },
    {
       "name": "CS 2022",
-      "title": "DISCRETE MATHEMATICS",
+      "title": "Discrete Mathematics",
       "group": "cs"
    },
    {
       "name": "CS 2102",
-      "title": "OBJECT-ORIENTED DESIGN CONCEPTS",
+      "title": "Object-oriented Design Concepts",
       "group": "cs",
       "requirements": [
          "CS 1101"
@@ -37,7 +37,7 @@
    },
    {
       "name": "CS 2103",
-      "title": "ACCELERATED OBJECT-ORIENTED DESIGN CONCEPTS",
+      "title": "Accelerated Object-oriented Design Concepts",
       "group": "cs",
       "requirements": [
          "CS 1101"
@@ -45,7 +45,7 @@
    },
    {
       "name": "CS 2119",
-      "title": "APPLICATION BUILDING WITH OBJECT-ORIENTED CONCEPTS",
+      "title": "Application Building With Object-oriented Concepts",
       "group": "cs",
       "requirements": [
          "CS 1101"
@@ -53,7 +53,7 @@
    },
    {
       "name": "CS 2223",
-      "title": "ALGORITHMS",
+      "title": "Algorithms",
       "group": "cs",
       "requirements": [
          "CS 2102",
@@ -62,7 +62,7 @@
    },
    {
       "name": "CS 2301",
-      "title": "SYSTEMS PROGRAMMING FOR NON-MAJORS",
+      "title": "Systems Programming for Non-majors",
       "group": "cs",
       "requirements": [
          "CS 1101"
@@ -70,7 +70,7 @@
    },
    {
       "name": "CS 2303",
-      "title": "SYSTEMS PROGRAMMING CONCEPTS",
+      "title": "Systems Programming Concepts",
       "group": "cs",
       "requirements": [
          "CS 2102"
@@ -78,9 +78,9 @@
    },
    {
       "name": "CS 3013",
-      "title": "OPERATING SYSTEMS",
+      "title": "Operating Systems",
       "group": "cs",
-      "area": "systems",
+      "Area": "Systems",
       "requirements": [
          "CS 2303",
          "CS 2011"
@@ -88,24 +88,24 @@
    },
    {
       "name": "CS 3041",
-      "title": "HUMAN-COMPUTER INTERACTION",
+      "title": "Human-computer Interaction",
       "group": "cs",
-      "area": "design",
+      "Area": "design",
       "requirements": [
          "CS 2102"
       ]
    },
    {
       "name": "CS 3043",
-      "title": "SOCIAL IMPLICATIONS OF INFORMATION PROCESSING",
+      "title": "Social Implications of Information Processing",
       "group": "cs",
-      "area": "social"
+      "Area": "social"
    },
    {
       "name": "CS 3133",
-      "title": "FOUNDATIONS OF COMPUTER SCIENCE",
+      "title": "Foundations of Computer Science",
       "group": "cs",
-      "area": "theory",
+      "Area": "theory",
       "requirements": [
          "CS 2022",
          "CS 2223"
@@ -113,9 +113,9 @@
    },
    {
       "name": "CS 3431",
-      "title": "DATABASE SYSTEMS I",
+      "title": "Database Systems I",
       "group": "cs",
-      "area": "design",
+      "Area": "design",
       "requirements": [
          "CS 2022",
          "CS 2102"
@@ -123,7 +123,7 @@
    },
    {
       "name": "CS 3516",
-      "title": "COMPUTER NETWORKS",
+      "title": "Computer Networks",
       "group": "cs",
       "requirements": [
          "CS 2303"
@@ -131,26 +131,26 @@
    },
    {
       "name": "CS 3733",
-      "title": "SOFTWARE ENGINEERING",
+      "title": "Software Engineering",
       "group": "cs",
-      "area": "design",
+      "Area": "design",
       "requirements": [
          "CS 2102"
       ]
    },
    {
       "name": "CS 4032",
-      "title": "NUMERICAL METHODS FOR LINEAR AND NONLINEAR SYSTEMS",
+      "title": "Numerical Methods for Linear and Nonlinear Systems",
       "group": "cs"
    },
    {
       "name": "CS 4033",
-      "title": "NUMERICAL METHODS FOR CALCULUS AND DIFFERENTIAL EQUATIONS",
+      "title": "Numerical Methods for Calculus and Differential Equations",
       "group": "cs"
    },
    {
       "name": "CS 4100",
-      "title": "ARTIFICIAL INTELLIGENCE FOR INTERACTIVE MEDIA AND GAMES",
+      "title": "Artificial Intelligence for Interactive Media and Games",
       "group": "cs",
       "requirements": [
          "CS 2102",
@@ -159,32 +159,32 @@
    },
    {
       "name": "CS 4120",
-      "title": "ANALYSIS OF ALGORITHMS",
+      "title": "Analysis of Algorithms",
       "group": "cs",
-      "area": "theory",
+      "Area": "theory",
       "requirements": [
          "CS 2223"
       ]
    },
    {
       "name": "CS 4123",
-      "title": "THEORY OF COMPUTATION",
+      "title": "Theory of Computation",
       "group": "cs",
-      "area": "theory",
+      "Area": "theory",
       "requirements": [
          "CS 3133"
       ]
    },
    {
       "name": "CS 420X",
-      "title": "GRAPHICL SIMUL OF PHYSICAL SYS",
+      "title": "Graphicl Simul of Physical Sys",
       "group": "cs"
    },
    {
       "name": "CS 4233",
-      "title": "OBJECT-ORIENTED ANALYSIS AND DESIGN",
+      "title": "Object-oriented Analysis and Design",
       "group": "cs",
-      "area": "design",
+      "Area": "design",
       "requirements": [
          "CS 2303",
          "CS 3733"
@@ -192,7 +192,7 @@
    },
    {
       "name": "CS 4241",
-      "title": "WEBWARE: COMPUTATIONAL TECHNOLOGY FOR NETWORK INFORMATION SYSTEMS",
+      "title": "Webware: Computational Technology for Network Information Systems",
       "group": "cs",
       "requirements": [
          "CS 2102",
@@ -201,7 +201,7 @@
    },
    {
       "name": "CS 4341",
-      "title": "INTRODUCTION TO ARTIFICIAL INTELLIGENCE",
+      "title": "Introduction to Artificial Intelligence",
       "group": "cs",
       "requirements": [
          "CS 2102",
@@ -211,12 +211,12 @@
    },
    {
       "name": "CS 4342",
-      "title": "MACHINE LEARNING",
+      "title": "Machine Learning",
       "group": "cs"
    },
    {
       "name": "CS 4401",
-      "title": "SOFTWARE SECURITY ENGINEERING",
+      "title": "Software Security Engineering",
       "group": "cs",
       "requirements": [
          "CS 3013",
@@ -225,7 +225,7 @@
    },
    {
       "name": "CS 4404",
-      "title": "TOOLS AND TECHNIQUES IN COMPUTER NETWORK SECURITY",
+      "title": "Tools and Techniques in Computer Network Security",
       "group": "cs",
       "requirements": [
          "CS 3013",
@@ -234,7 +234,7 @@
    },
    {
       "name": "CS 4432",
-      "title": "DATABASE SYSTEMS II",
+      "title": "Database Systems II",
       "group": "cs",
       "requirements": [
          "CS 3431",
@@ -243,7 +243,7 @@
    },
    {
       "name": "CS 4445",
-      "title": "DATA MINING AND KNOWLEDGE DISCOVERY IN DATABASES",
+      "title": "Data Mining and Knowledge Discovery in Databases",
       "group": "cs",
       "requirements": [
          "CS 2223",
@@ -252,9 +252,9 @@
    },
    {
       "name": "CS 4513",
-      "title": "DISTRIBUTED COMPUTING SYSTEMS",
+      "title": "Distributed Computing Systems",
       "group": "cs",
-      "area": "systems",
+      "Area": "Systems",
       "requirements": [
          "CS 3013",
          "CS 3516"
@@ -262,9 +262,9 @@
    },
    {
       "name": "CS 4515",
-      "title": "COMPUTER ARCHITECTURE",
+      "title": "Computer Architecture",
       "group": "cs",
-      "area": "systems",
+      "Area": "Systems",
       "requirements": [
          "CS 2011",
          "CS 3013"
@@ -272,9 +272,9 @@
    },
    {
       "name": "CS 4516",
-      "title": "ADVANCED COMPUTER NETWORKS",
+      "title": "Advanced Computer Networks",
       "group": "cs",
-      "area": "systems",
+      "Area": "Systems",
       "requirements": [
          "CS 3013",
          "CS 3516"
@@ -282,14 +282,14 @@
    },
    {
       "name": "CS 4518",
-      "title": "MOBILE & UBIQUITOUS COMPUTING",
+      "title": "Mobile & Ubiquitous Computing",
       "group": "cs"
    },
    {
       "name": "CS 4533",
-      "title": "TECHNIQUES OF PROGRAMMING LANGUAGE TRANSLATION",
+      "title": "Techniques of Programming Language Translation",
       "group": "cs",
-      "area": "theory",
+      "Area": "theory",
       "requirements": [
          "CS 2102",
          "CS 3133"
@@ -297,9 +297,9 @@
    },
    {
       "name": "CS 4536",
-      "title": "PROGRAMMING LANGUAGES",
+      "title": "Programming Languages",
       "group": "cs",
-      "area": "theory",
+      "Area": "theory",
       "requirements": [
          "CS 2303",
          "CS 3133",
@@ -308,7 +308,7 @@
    },
    {
       "name": "CS 453X",
-      "title": "MACHINE LEARNING",
+      "title": "Machine Learning",
       "group": "cs",
       "requirements": [
          "CS 2223"
@@ -316,7 +316,7 @@
    },
    {
       "name": "CS 4731",
-      "title": "COMPUTER GRAPHICS",
+      "title": "Computer Graphics",
       "group": "cs",
       "requirements": [
          "CS 2223",
@@ -325,7 +325,7 @@
    },
    {
       "name": "CS 4801",
-      "title": "INTRODUCTION TO CRYPTOGRAPHY AND COMMUNICATION SECURITY",
+      "title": "Introduction to Cryptography and Communication Security",
       "group": "cs",
       "requirements": [
          "CS 2301",
@@ -334,7 +334,7 @@
    },
    {
       "name": "CS 4802",
-      "title": "BIOVISUALIZATION",
+      "title": "Biovisualization",
       "group": "cs",
       "requirements": [
          "CS 2102",
@@ -343,7 +343,7 @@
    },
    {
       "name": "CS 4803",
-      "title": "BIOLOGICAL AND BIOMEDICAL DATABASE MINING",
+      "title": "Biological and Biomedical Database Mining",
       "group": "cs",
       "requirements": [
          "CS 2102",
@@ -353,7 +353,7 @@
    },
    {
       "name": "CS 480X",
-      "title": "DATA VISUALIZATION",
+      "title": "Data Visualization",
       "group": "cs",
       "requirements": [
          "CS 3733"
@@ -361,53 +361,53 @@
    },
    {
       "name": "GOV 2314",
-      "title": "CYBERLAW AND POLICY",
+      "title": "Cyberlaw and Policy",
       "group": "cs",
-      "area": "social"
+      "Area": "social"
    },
    {
       "name": "GOV 1310",
-      "title": "LAW, COURTS, AND POLITICS"
+      "title": "Law, Courts, and Politics"
    },
    {
       "name": "GOV 2310",
-      "title": "CONSTITUTIONAL LAW: FOUNDATIONS OF GOVERNMENT"
+      "title": "Constitutional Law: Foundations of Government"
    },
    {
       "name": "GOV 2315",
-      "title": "PRIVACY: HOW LAWS, POLICY, AND TECHNOLOGY FIT TOGETHER",
+      "title": "Privacy: How Laws, Policy, and Technology Fit Together",
       "requirements": [
          "GOV 2310/GOV 1310"
       ]
    },
    {
       "name": "IMGD 1000",
-      "title": "CRITICAL STUDIES OF INTERACTIVE MEDIA AND GAMES"
+      "title": "Critical Studies of Interactive Media and Games"
    },
    {
       "name": "IMGD 2000",
-      "title": "SOCIAL ISSUES IN INTERACTIVE MEDIA AND GAMES",
-      "area": "social",
+      "title": "Social Issues in Interactive Media and Games",
+      "Area": "social",
       "requirements": [
          "IMGD 1000"
       ]
    },
    {
       "name": "IMGD 2001",
-      "title": "PHILOSOPHY AND ETHICS OF COMPUTER GAMES",
-      "area": "social",
+      "title": "Philosophy and Ethics of Computer Games",
+      "Area": "social",
       "requirements": [
          "IMGD 1000"
       ]
    },
    {
       "name": "RBE 3100",
-      "title": "SOCIAL IMPLICATIONS OF ROBOTICS",
-      "area": "social"
+      "title": "Social Implications of Robotics",
+      "Area": "social"
    },
    {
       "name": "MA 2610",
-      "title": "APPLIED STATISTICS FOR THE LIFE SCIENCES",
+      "title": "Applied Statistics for the Life Sciences",
       "group": "math",
       "requirements": [
          "MA 1022"
@@ -415,7 +415,7 @@
    },
    {
       "name": "MA 2611",
-      "title": "APPLIED STATISTICS I",
+      "title": "Applied Statistics I",
       "group": "math",
       "requirements": [
          "MA 1022"
