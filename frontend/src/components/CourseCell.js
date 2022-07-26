@@ -48,11 +48,9 @@ const CourseCell = ({
    useEffect(() => {
       if (editMode) {
          const keyDownHandler = event => {
-            console.log('User pressed: ', event.key)
 
             if (event.key === 'Enter') {
                event.preventDefault()
-               console.log("courseCellText", courseCellText)
                handleSubmit()
             }
          }
@@ -87,7 +85,6 @@ const CourseCell = ({
 
    const handleSubmit = () => {
       //update coursesTaken
-      //change td back to text
       if (!getCourseValidity()) return
 
       //same text as pre-edit (no change)
@@ -95,7 +92,6 @@ const CourseCell = ({
          setEditMode(false)
          return
       }
-
 
       //edit course
       if (text !== '') {

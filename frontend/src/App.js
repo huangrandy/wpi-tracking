@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react'
 import courseService from './services/courses'
-import CourseForm from './components/CourseForm'
 import allCourses from './allCourses'
+import CourseForm from './components/CourseForm'
 import Group from './components/Group'
+import Sidebar from './components/Sidebar'
 import Masonry from 'react-masonry-css'
 import "./styles/App.css"
 
@@ -11,6 +12,7 @@ function App() {
    const [message, setMessage] = useState(null)
    const [groups, setGroups] = useState([])
 
+   //maps group name to number of courses in group
    const numCoursesMap = new Map([
       ['Computer Science', 15],
       ['General', 21],
@@ -18,6 +20,7 @@ function App() {
       ['Science', 5]
    ])
 
+   //courses with no area have area-name = group-name
    const areaMap = new Map([
       ['Computer Science', ['cs', 'theory', 'systems', 'social', 'design']],
       ['General', ['humanities', 'ss', 'iqp', 'mqp']],
@@ -41,11 +44,12 @@ function App() {
       810: 1
    }
 
+
    return (
       <div>
          <nav className='sticky'>
             <h2 className="navLabel">
-               Tracking App
+               Interactive Tracking App
             </h2>
          </nav>
          <div className='bodyContainer'>
@@ -86,10 +90,9 @@ function App() {
                   )}
                </Masonry>
             </div>
-            <div className="sidebar">
-               Recommended Courses:
-
-            </div>
+            <Sidebar
+               coursesTaken={coursesTaken}
+            />
          </div>
       </div>
    )

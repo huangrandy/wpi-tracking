@@ -24,9 +24,6 @@
   margin-bottom: 20px;
 }
 
-/* .courseForm {
-  margin: 10px
-} */
 
 nav {
   background-color: #1c232c;
@@ -80,6 +77,17 @@ input {
   border-width: 1px;
 }
 
+.formButton {
+  padding: 4px 6px;
+  background-color: #21262d;
+  border: rgb(80, 83, 97) solid 1px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #272a30;
+}
+
 .courseCellInput {
   background-color: #131921;
   font: inherit;
@@ -90,20 +98,16 @@ input {
   box-sizing: border-box;
 }
 
-.formButton {
-  padding: 4px 6px;
-  background-color: #21262d;
-  border: rgb(79, 82, 99) solid 1px;
-  border-radius: 5px;
-}
 
 
 .groupTitle {
+  font-weight: bold;
   margin: 4px 0 3px 0;
 }
 
 .groupInternal {
   margin: 3px 5px 5px 5px;
+  cursor: default;
 }
 
 
