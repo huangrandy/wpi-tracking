@@ -18,6 +18,9 @@ const CourseCell = ({
    const [message, setMessage] = useState(null)
    const [courseCellText, setCourseCellText] = useState('')
 
+   console.log(courseCellText)
+   console.log(text)
+
    useEffect(() => {
       setCourseCellText(text)
    }, [coursesTaken])
@@ -25,10 +28,9 @@ const CourseCell = ({
    //escape/click out hook
    useEffect(() => {
       const checkIfClickedOutside = e => {
-         if ((editMode &&
-            ref.current &&
-            !ref.current.contains(e.target))
-            || e.key === 'Escape') {
+         if (editMode &&
+            ((ref.current && !ref.current.contains(e.target))
+               || (e.key === 'Escape'))) {
             setEditMode(false)
             setCourseCellText(text)
          }
@@ -98,7 +100,7 @@ const CourseCell = ({
             c.name === text
          ))
          const id = courseToChange.id
-         
+
          const courseObj = allCourses.find(c => (
             c.name === courseCellText
          ))
@@ -135,9 +137,9 @@ const CourseCell = ({
          ))
          courseObj.id = Math.round(1000 * Math.random())
 
-         console.log('adding new course')
-         console.log('new course', courseObj)
-         console.log('courseCellText', courseCellText)
+         // console.log('adding new course')
+         // console.log('new course', courseObj)
+         // console.log('courseCellText', courseCellText)
 
          courseService
             .create(courseObj)

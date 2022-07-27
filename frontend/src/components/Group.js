@@ -28,7 +28,6 @@ const Group = ({
          if ((ref.current &&
             !ref.current.contains(e.target))
             || e.key === 'Escape') {
-            console.log()
          }
       }
 

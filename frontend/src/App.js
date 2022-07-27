@@ -30,11 +30,13 @@ function App() {
 
    //loads in taken courses
    useEffect(() => {
-      courseService.getAll().then(courses =>
+      const getCourses = async () => {
+         const courses = await courseService.getAll()
          setCoursesTaken(courses)
-      )
-      setGroups(['Computer Science', 'General', 'Math', 'Science'])
+      }
+      getCourses()
 
+      setGroups(['Computer Science', 'General', 'Math', 'Science'])
    }, [])
 
    const breakpoints = {
