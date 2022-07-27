@@ -8,6 +8,7 @@ backend/node_modules
 
 # testing
 /coverage
+backend/test.rest
 
 # production
 /build

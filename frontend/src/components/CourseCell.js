@@ -18,7 +18,6 @@ const CourseCell = ({
    const [message, setMessage] = useState(null)
    const [courseCellText, setCourseCellText] = useState('')
 
-
    useEffect(() => {
       setCourseCellText(text)
    }, [coursesTaken])
@@ -98,22 +97,27 @@ const CourseCell = ({
          const courseToChange = coursesTaken.find(c => (
             c.name === text
          ))
-
          const id = courseToChange.id
+         
          const courseObj = allCourses.find(c => (
             c.name === courseCellText
          ))
          courseObj.id = id
 
-         console.log('editing course')
-         console.log('prev course', courseToChange)
-         console.log('new course', courseObj)
-         console.log('courseCellText', courseCellText)
+         // console.log('editing course')
+         // console.log('prev course', courseToChange)
+         // console.log('new course', courseObj)
+         // console.log('courseCellText', courseCellText)
 
          courseService
             .update(courseObj.id, courseObj)
             .then(returnedCourse => {
-               setCoursesTaken(coursesTaken.concat(returnedCourse))
+               setEditMode(false)
+               setCoursesTaken(coursesTaken.map(c =>
+                  c.id === id
+                     ? courseObj
+                     : c
+               ))
             })
             .catch(error => {
                setMessage(

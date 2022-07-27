@@ -80,7 +80,7 @@
       "name": "CS 3013",
       "title": "Operating Systems",
       "group": "cs",
-      "Area": "Systems",
+      "area": "systems",
       "requirements": [
          "CS 2303",
          "CS 2011"
@@ -90,7 +90,7 @@
       "name": "CS 3041",
       "title": "Human-computer Interaction",
       "group": "cs",
-      "Area": "design",
+      "area": "design",
       "requirements": [
          "CS 2102"
       ]
@@ -99,13 +99,13 @@
       "name": "CS 3043",
       "title": "Social Implications of Information Processing",
       "group": "cs",
-      "Area": "social"
+      "area": "social"
    },
    {
       "name": "CS 3133",
       "title": "Foundations of Computer Science",
       "group": "cs",
-      "Area": "theory",
+      "area": "theory",
       "requirements": [
          "CS 2022",
          "CS 2223"
@@ -115,7 +115,7 @@
       "name": "CS 3431",
       "title": "Database Systems I",
       "group": "cs",
-      "Area": "design",
+      "area": "design",
       "requirements": [
          "CS 2022",
          "CS 2102"
@@ -133,7 +133,7 @@
       "name": "CS 3733",
       "title": "Software Engineering",
       "group": "cs",
-      "Area": "design",
+      "area": "design",
       "requirements": [
          "CS 2102"
       ]
@@ -161,7 +161,7 @@
       "name": "CS 4120",
       "title": "Analysis of Algorithms",
       "group": "cs",
-      "Area": "theory",
+      "area": "theory",
       "requirements": [
          "CS 2223"
       ]
@@ -170,7 +170,7 @@
       "name": "CS 4123",
       "title": "Theory of Computation",
       "group": "cs",
-      "Area": "theory",
+      "area": "theory",
       "requirements": [
          "CS 3133"
       ]
@@ -184,7 +184,7 @@
       "name": "CS 4233",
       "title": "Object-oriented Analysis and Design",
       "group": "cs",
-      "Area": "design",
+      "area": "design",
       "requirements": [
          "CS 2303",
          "CS 3733"
@@ -254,7 +254,7 @@
       "name": "CS 4513",
       "title": "Distributed Computing Systems",
       "group": "cs",
-      "Area": "Systems",
+      "area": "systems",
       "requirements": [
          "CS 3013",
          "CS 3516"
@@ -264,7 +264,7 @@
       "name": "CS 4515",
       "title": "Computer Architecture",
       "group": "cs",
-      "Area": "Systems",
+      "area": "systems",
       "requirements": [
          "CS 2011",
          "CS 3013"
@@ -274,7 +274,7 @@
       "name": "CS 4516",
       "title": "Advanced Computer Networks",
       "group": "cs",
-      "Area": "Systems",
+      "area": "systems",
       "requirements": [
          "CS 3013",
          "CS 3516"
@@ -289,7 +289,7 @@
       "name": "CS 4533",
       "title": "Techniques of Programming Language Translation",
       "group": "cs",
-      "Area": "theory",
+      "area": "theory",
       "requirements": [
          "CS 2102",
          "CS 3133"
@@ -299,7 +299,7 @@
       "name": "CS 4536",
       "title": "Programming Languages",
       "group": "cs",
-      "Area": "theory",
+      "area": "theory",
       "requirements": [
          "CS 2303",
          "CS 3133",
@@ -363,7 +363,7 @@
       "name": "GOV 2314",
       "title": "Cyberlaw and Policy",
       "group": "cs",
-      "Area": "social"
+      "area": "social"
    },
    {
       "name": "GOV 1310",
@@ -387,7 +387,7 @@
    {
       "name": "IMGD 2000",
       "title": "Social Issues in Interactive Media and Games",
-      "Area": "social",
+      "area": "social",
       "requirements": [
          "IMGD 1000"
       ]
@@ -395,7 +395,7 @@
    {
       "name": "IMGD 2001",
       "title": "Philosophy and Ethics of Computer Games",
-      "Area": "social",
+      "area": "social",
       "requirements": [
          "IMGD 1000"
       ]
@@ -403,7 +403,7 @@
    {
       "name": "RBE 3100",
       "title": "Social Implications of Robotics",
-      "Area": "social"
+      "area": "social"
    },
    {
       "name": "MA 2610",
