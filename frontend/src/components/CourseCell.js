@@ -68,6 +68,7 @@ const CourseCell = ({
       const courseNames = coursesTaken.map(c => c.name)
 
       if (courseCellText === text) return true
+      if (text !== "" && courseCellText === "") return true
       if (courseNames.includes(courseCellText)) {
          setMessage("course already taken")
          setTimeout(() => {
@@ -94,6 +95,29 @@ const CourseCell = ({
          return
       }
 
+      //delete course
+      if (courseCellText === "") {
+         const courseToDelete = coursesTaken.find(c => (
+            c.name === text
+         ))
+
+         courseService
+            .remove(courseToDelete.id)
+            .then(returnedCourse => {
+               setEditMode(false)
+               setCoursesTaken(coursesTaken.filter(c =>
+                  c.id !== courseToDelete.id
+               ))
+            })
+            .catch(error => {
+               setMessage(
+                  "can't remove course"
+               )
+               setTimeout(() => {
+                  setMessage(null)
+               }, 5000)
+            })
+      }
       //edit course
       if (text !== '') {
          const courseToChange = coursesTaken.find(c => (
