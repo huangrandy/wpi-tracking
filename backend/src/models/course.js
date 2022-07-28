@@ -14,6 +14,7 @@ const courseSchema = new mongoose.Schema({
 		required: true
 	},
 	area: String,
+   requirements: Array 
 	// user: {
 	// 	type: mongoose.Schema.Types.ObjectId,
 	// 	ref: 'User'

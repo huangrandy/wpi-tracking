@@ -11,10 +11,10 @@ const middleware = require('./utils/middleware')
 
 const mongoUrl = config.MONGODB_URI
 
-// mongoose.connect(mongoUrl)
+mongoose.connect(mongoUrl)
 
 app.use(cors())
-// app.use(express.static('build'))
+app.use(express.static('build'))
 app.use(express.json())
 app.use(middleware.requestLogger)
 // app.use(middleware.tokenExtractor)

@@ -1,73 +1,64 @@
 const courseRouter = require('express').Router()
-const course = require('../models/course')
+const Course = require('../models/course')
 const middleware = require('../utils/middleware')
 
-let coursesTaken = [
-   {
-      id: 1,
-      "name": "CS 1101",
-      "title": "Introduction to Program Design",
-      "group": "cs"
-   },
-   {
-      id: 2,
-      "name": "CS 2102",
-      "title": "Object-oriented Design Concepts",
-      "group": "cs",
-      "requirements": [
-         "CS 1101"
-      ]
-   },
-   {
-      id: 3,
-      "name": "CS 3733",
-      "title": "Software Engineering",
-      "group": "cs",
-      "area": "design",
-      "requirements": [
-         "CS 2102"
-      ]
-   }
-]
 
 courseRouter.get('/', async (request, response) => {
+   const coursesTaken = await Course.find({})
    response.json(coursesTaken)
 })
 
 courseRouter.post('/', async (request, response) => {
    const body = request.body
-   console.log(body)
 
    // const user = request.user
    // body.user = user._id
 
-   // const course = new Course(body)
-   // const savedCourse = await course.save()
+   const course = new Course(body)
+   const savedCourse = await course.save()
 
    // user.courses = user.courses.concat(savedCourse._id)
    // await user.save()
-   coursesTaken = coursesTaken.concat(body)
 
-   response.status(201).json(body)
+   response.status(201).json(savedCourse)
 })
 
 courseRouter.put('/:id', async (request, response, next) => {
-   const id = parseInt(request.params.id)
    const body = request.body
-   const newCourse = {
-      ...body,
-      id
-   }
+   const course = await Course.findById(request.params.id)
 
-   coursesTaken = coursesTaken.map(c =>
-      c.id === id
-         ? newCourse
-         : c
-   )
+   const updatedCourse = await Course
+      .findByIdAndUpdate(request.params.id, body, { new: true })
 
-coursesTaken.forEach(c => console.log(c.name))
+   updatedCourse
+      ? response.status(200).json(updatedCourse.toJSON())
+      : response.status(404).end()
+})
 
-   response.status(200).json(newCourse)
+courseRouter.delete('/:id', async (request, response) => {
+   // const decodedToken = jwt.verify(request.token, process.env.SECRET)
+   const courseId = request.params.id
+
+   //checks whether token is valid
+   // if (!decodedToken.id) {
+   // 	return response.status(401).json({ error: 'token missing or invalid' })
+   // }
+
+   // const user = request.user
+   const course = await Course.findById(courseId)
+
+   //checks whether user is correct
+   // if (course.user.toString() !== user._id.toString()) {
+   // 	return response.status(401).json({ error: 'bad user' })
+   // }
+
+   // user.courses = user.courses.filter(n =>
+   //    n.toString() !== blogId
+   // )
+   // await user.save()
+   await Course.findByIdAndRemove(courseId)
+
+   response.status(204).end()
 })
 
 module.exports = courseRouter
