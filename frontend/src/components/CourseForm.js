@@ -37,6 +37,7 @@ const CourseForm = ({
    //adds course to db
    const addCourse = () => {
       event.preventDefault()
+      setCourse(course.toUpperCase())
 
       if (!getCourseValidity()) return
 

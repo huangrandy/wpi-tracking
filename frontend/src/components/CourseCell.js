@@ -18,9 +18,6 @@ const CourseCell = ({
    const [message, setMessage] = useState(null)
    const [courseCellText, setCourseCellText] = useState('')
 
-   console.log(courseCellText)
-   console.log(text)
-
    useEffect(() => {
       setCourseCellText(text)
    }, [coursesTaken])
@@ -85,8 +82,9 @@ const CourseCell = ({
       return true
    }
 
-   const handleSubmit = () => {
+   const handleSubmit = async () => {
       //update coursesTaken
+      setCourseCellText(courseCellText.toUpperCase())
       if (!getCourseValidity()) return
 
       //same text as pre-edit (no change)
