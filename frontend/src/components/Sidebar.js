@@ -1,10 +1,12 @@
-import useEffect from 'react'
+import { useState, useEffect } from 'react'
 import allCourses from '../allCourses'
 import courses from '../services/courses'
 
 const Sidebar = ({
     coursesTaken
 }) => {
+    const [x, setX] = useState(0)
+    const [y, setY] = useState(0)
     const ratedCourses = []
     let coursesTakenNames = coursesTaken.map(c => c.name)
     const numCs = coursesTaken
@@ -17,8 +19,13 @@ const Sidebar = ({
         num4: 0
     }
 
+    window.onmousemove = function (e) {
+        setX(e.clientX)
+        setY(e.clientY)
+    }
+
     coursesTaken.forEach(c => {
-        if (c.area === 'system') requirements.systems = true
+        if (c.area === 'systems') requirements.systems = true
         if (c.area === 'theory') requirements.theory = true
         if (c.area === 'design') requirements.design = true
         if (c.area === 'social') requirements.social = true
@@ -147,8 +154,20 @@ const Sidebar = ({
             </div>
             <div>
                 {ratedCourses.map(c => (
-                    <div key={c.course.name}>
+                    <div
+                        key={c.course.name}
+                        className='tooltip'
+                    >
                         {`${c.course.name}`}
+                        <span
+                            style={{
+                                top: (y + 20) + 'px',
+                                left: (x + 20) + 'px',
+                                position: 'fixed'
+                            }}
+                        >
+                            {c.course.title}
+                        </span>
                     </div>
                 ))}
             </div>

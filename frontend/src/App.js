@@ -36,7 +36,7 @@ function App() {
         }
         getCourses()
 
-        setGroups(['Computer Science', 'General', 'Math', 'Science'])
+        setGroups(['General', 'Computer Science', 'Math', 'Science'])
     }, [])
 
     const breakpoints = {
@@ -65,12 +65,12 @@ function App() {
                         setMessage={setMessage}
                     />
 
-                    <h2>all courses taken</h2>
+                    {/* <h2>all courses taken</h2>
                     {coursesTaken.map(course =>
                         <div key={course.id}>
                             {course.name} {course.area}
                         </div>
-                    )}
+                    )} */}
 
                     <p></p>
 

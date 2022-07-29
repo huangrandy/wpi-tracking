@@ -117,7 +117,7 @@ const CourseCell = ({
             })
       }
       //edit course
-      if (text !== '') {
+      else if (text !== '') {
          const courseToChange = coursesTaken.find(c => (
             c.name === text
          ))

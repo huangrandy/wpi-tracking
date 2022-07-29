@@ -60,6 +60,18 @@ body {
   position: sticky;
 }
 
+.tooltip span {
+  display: none;
+}
+
+.tooltip:hover span {
+  background-color: #1c232c;
+  border: solid 1px white;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
 .justifyStart {
   margin-right: auto;
 }
